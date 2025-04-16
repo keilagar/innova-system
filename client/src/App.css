@@ -1,0 +1,31 @@
+
+:root {
+  --azul-electrico: #0077B6;
+  --gris-claro: #F1F1F1;
+  --azul-oscuro: #023E8A;
+  --blanco: #FFFFFF;
+  --verde-menta: #90E0EF;
+}
+
+body {
+  background-color: var(--gris-claro);
+}
+
+.bg-azul-oscuro {
+  background-color: var(--azul-oscuro);
+}
+
+.hero {
+  background-color: var(--azul-electrico);
+}
+
+.btn-azul {
+  background-color: var(--azul-electrico);
+  color: var(--blanco);
+}
+
+.btn-verde {
+  background-color: var(--verde-menta);
+  color: var(--azul-oscuro);
+  font-weight: bold;
+}
