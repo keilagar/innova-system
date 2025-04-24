@@ -1,0 +1,99 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F1F1F1;
+  }
+  .hero {
+    position: relative;
+    background: linear-gradient(-45deg, #023E8A, #0077B6, #90E0EF, #023E8A);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #FFFFFF;
+    padding: 100px 0;
+    overflow: hidden;
+  }
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .hero h1, .hero p, .hero a {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  .hero h1 { animation-delay: 0.3s; }
+  .hero p { animation-delay: 0.6s; }
+  .hero a { animation-delay: 0.9s; }
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .btn-cta {
+    background-color: #90E0EF;
+    color: #023E8A;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  .btn-cta:hover {
+    background-color: #0077B6;
+    color: #FFF;
+  }
+  .section-title {
+    color: #0077B6;
+    font-weight: bold;
+  }
+  footer {
+    background-color: #023E8A;
+    color: #FFFFFF;
+    padding: 20px 0;
+  }
+  .icon-service {
+    font-size: 2rem;
+    color: #0077B6;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  .icon-service:hover {
+    transform: scale(1.2);
+  }
+  .service-box {
+    padding: 20px;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  .service-box:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+  }
+  .stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    overflow: hidden;
+    z-index: 0;
+    transform: translateZ(0);
+  }
+  .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: white;
+    animation: starMove 10s linear infinite, twinkle 3s ease-in-out infinite;
+    opacity: 0.6;
+  }
+  @keyframes starMove {
+    0% { transform: translateY(0); opacity: 0.6; }
+    100% { transform: translateY(100vh); opacity: 0; }
+  }
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; background-color: #90E0EF; }
+  }

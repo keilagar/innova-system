@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innova System | Software a Medida</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="CSS/style.css"
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#"><strong>Innova System</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero text-center" data-aos="fade-up">
+    <div class="stars" id="stars"></div>
+    <div class="container position-relative" style="z-index: 1;">
+      <h1>Desarrollamos software a medida para tu negocio</h1>
+      <p class="lead">Innovación. Tecnología. Resultados.</p>
+      <a href="#contacto" class="btn btn-cta btn-lg mt-3">Contáctanos</a>
+    </div>
+  </section>
+
+  <section id="nosotros" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container text-center">
+      <h2 class="section-title mb-4">¿Quiénes Somos?</h2>
+      <p class="lead">En Innova System, diseñamos soluciones tecnológicas personalizadas que potencian tu negocio. Con un enfoque innovador, combinamos experiencia y creatividad para transformar tus ideas en software funcional.</p>
+    </div>
+  </section>
+
+  <section id="servicios" class="py-5" data-aos="fade-up">
+    <div class="container text-center">
+      <h2 class="section-title mb-5">Nuestros Servicios</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="service-box h-100">
+            <i class="fas fa-cogs icon-service"></i>
+            <h5>Desarrollo a Medida</h5>
+            <p>Soluciones únicas y personalizadas para cada necesidad de negocio.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box h-100">
+            <i class="fas fa-laptop-code icon-service"></i>
+            <h5>Sitios Web Profesionales</h5>
+            <p>Diseño y desarrollo web moderno, adaptable y enfocado en resultados.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box h-100">
+            <i class="fas fa-mobile-alt icon-service"></i>
+            <h5>Apps Móviles</h5>
+            <p>Desarrollo de aplicaciones móviles nativas o híbridas para Android e iOS.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="py-5 bg-light" data-aos="zoom-in">
+    <div class="container text-center">
+      <h2 class="section-title mb-4">Contáctanos</h2>
+      <p class="mb-4">¿Tienes un proyecto en mente? Escríbenos y hagámoslo realidad.</p>
+      <a href="mailto:contacto@innovasystem.com" class="btn btn-primary btn-lg">contacto@innovasystem.com</a>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-0">© 2025 Innova System. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    const starsContainer = document.getElementById('stars');
+    for (let i = 0; i < 60; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.top = Math.random() * 100 + '%';
+      star.style.left = Math.random() * 100 + '%';
+      star.style.animationDuration = (8 + Math.random() * 5) + 's';
+      starsContainer.appendChild(star);
+    }
+  </script>
+</body>
+</html>
